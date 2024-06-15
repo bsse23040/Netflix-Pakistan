@@ -13,7 +13,7 @@ body {
 .main {
     background-image: url("assets/images/imranvsarmy.jpeg");
     background-position: center center;
-    background-size: max(1200px, 100vw);
+    background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
     position: relative;
@@ -97,6 +97,9 @@ nav button {
     font-size: 20px;
     border-radius: 4px;
     font-weight: 400;
+    font-weight: 400;
+    border: 1px solid white;
+    cursor: pointer;
 }
 
 .btn-red-sm {
@@ -181,16 +184,21 @@ section.first:hover > div :nth-child(2) {
     text-align: center;
     font-size: 48px;
     color: rgb(6, 151, 6);
+    transition: color 1s ease;
+}
+
+.faq:hover{
+    h2{color: white;}
 }
 
 .faq {
     background: black;
-    color: white;
     padding: 34px;
+    transition: color 1s ease;
 }
 
 .faqbox:hover {
-    background-color: #414141;
+    background-color: green;
     color: white;
 }
 
@@ -203,7 +211,8 @@ section.first:hover > div :nth-child(2) {
     font-size: 24px;
     display: flex;
     justify-content: space-between;
-    background-color: #2d2d2d;
+    background-color: rgb(233, 233, 233);
+    color: rgb(0, 0, 0);
     padding: 24px;
     max-width: 60vw;
     margin: 34px auto;
