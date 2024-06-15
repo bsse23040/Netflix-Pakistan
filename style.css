@@ -148,22 +148,34 @@ nav button {
     width: 555px;
 }
 
-section.first>div {
+section.first > div {
     display: flex;
     flex-direction: column;
     padding: 34px 0;
+    transition: color 1s ease; /* Added ease timing function for smoother transition */
 }
 
-section.first>div :nth-child(1) {
+section.first > div :nth-child(1) {
     font-size: 48px;
     font-weight: bolder;
-    color: rgb(6, 151, 6);
+    color: rgb(6, 151, 6); /* Original color */
+    transition: color 1s ease; /* Transition color change */
 }
 
-section.first>div :nth-child(2) {
+section.first > div :nth-child(2) {
     font-size: 24px;
-
+    color: white; /* Original color */
+    transition: color 1s ease; /* Transition color change */
 }
+
+section.first:hover > div :nth-child(1) {
+    color: white; /* Swapped color */
+}
+
+section.first:hover > div :nth-child(2) {
+    color: rgb(6, 151, 6); /* Swapped color */
+}
+
 
 .faq h2 {
     text-align: center;
